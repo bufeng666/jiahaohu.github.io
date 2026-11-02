@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jiahao Hu is a master's student researching brain-inspired multimodal learning and visual reconstruction.">
+    <meta property="og:title" content="Jiahao Hu | AI Researcher">
+    <meta property="og:description" content="Researching brain-inspired multimodal learning, neural signal representation, and visual reconstruction.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#102a43">
+
+    <title>Jiahao Hu | AI Researcher</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --ink: #102a43;
+            --muted: #52606d;
+            --soft: #d9e2ec;
+            --paper: #f7f9fb;
+            --accent: #d05a3b;
+            --accent-light: #fff0eb;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.6;
+        }
+
+        .page {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 28px 32px 72px;
+        }
+
+        .topbar {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 86px;
+        }
+
+        .mark {
+            color: var(--accent);
+            font-size: 19px;
+            font-weight: bold;
+            letter-spacing: .04em;
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a,
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: var(--muted);
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+
+        nav a:hover,
+        nav a:focus-visible,
+        .contact-link:hover,
+        .contact-link:focus-visible {
+            color: var(--accent);
+        }
+
+        .hero {
+            border-bottom: 1px solid var(--soft);
+            display: grid;
+            gap: 52px;
+            grid-template-columns: minmax(0, 1.35fr) minmax(260px, .65fr);
+            padding-bottom: 92px;
+        }
+
+        .eyebrow {
+            color: var(--accent);
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: .16em;
+            margin: 0 0 18px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: clamp(52px, 8vw, 92px);
+            font-weight: normal;
+            letter-spacing: -.055em;
+            line-height: .96;
+            margin: 0;
+            max-width: 720px;
+        }
+
+        .intro {
+            color: var(--muted);
+            font-size: 20px;
+            margin: 28px 0 0;
+            max-width: 590px;
+        }
+
+        .hero-note {
+            align-self: end;
+            border-left: 3px solid var(--accent);
+            color: var(--muted);
+            font-size: 17px;
+            margin: 0;
+            padding: 4px 0 4px 22px;
+        }
+
+        .content {
+            display: grid;
+            gap: 72px;
+            grid-template-columns: minmax(0, 1.35fr) minmax(220px, .65fr);
+            padding-top: 72px;
+        }
+
+        h2 {
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            letter-spacing: .12em;
+            margin: 0 0 22px;
+            text-transform: uppercase;
+        }
+
+        .about p {
+            font-size: 21px;
+            margin: 0;
+            max-width: 650px;
+        }
+
+        .focus-list {
+            display: grid;
+            gap: 14px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .focus-item {
+            background: white;
+            border: 1px solid var(--soft);
+            border-radius: 4px;
+            font-size: 16px;
+            padding: 18px;
+        }
+
+        .contact {
+            background: var(--ink);
+            color: white;
+            padding: 28px;
+        }
+
+        .contact h2 {
+            color: #9fb3c8;
+        }
+
+        .contact p {
+            margin: 0;
+        }
+
+        .contact-link {
+            border-bottom: 1px solid #829ab1;
+            display: inline-block;
+            font-size: 16px;
+            padding-bottom: 3px;
+        }
+
+        footer {
+            border-top: 1px solid var(--soft);
+            color: var(--muted);
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            margin-top: 88px;
+            padding-top: 18px;
+        }
+
+        @media (max-width: 680px) {
+            .page {
+                padding: 22px 20px 48px;
+            }
+
+            .topbar {
+                margin-bottom: 60px;
+            }
+
+            nav {
+                gap: 14px;
+            }
+
+            nav a {
+                font-size: 11px;
+            }
+
+            .hero,
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                gap: 40px;
+                padding-bottom: 58px;
+            }
+
+            .content {
+                gap: 48px;
+                padding-top: 52px;
+            }
+
+            .about p {
+                font-size: 18px;
+            }
+
+            .focus-list {
+                grid-template-columns: 1fr;
+            }
+
+            footer {
+                margin-top: 58px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page">
+        <header class="topbar">
+            <a class="mark" href="/" aria-label="Jiahao Hu home">JH</a>
+            <nav aria-label="Primary navigation">
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <section class="hero" aria-labelledby="page-title">
+            <div>
+                <p class="eyebrow">Artificial Intelligence · Research</p>
+                <h1 id="page-title">Jiahao Hu</h1>
+                <p class="intro">Master's student in Computer Science exploring how brains, machines, and visual worlds connect.</p>
+            </div>
+            <p class="hero-note">Building representations that help machines make sense of neural signals and images.</p>
+        </section>
+
+        <div class="content">
+            <div>
+                <section class="about" id="about" aria-labelledby="about-title">
+                    <h2 id="about-title">About</h2>
+                    <p>I am a master's student working at the intersection of brain-inspired computing and multimodal learning. My work connects neural signal representation with image retrieval and visual reconstruction.</p>
+                </section>
+
+                <section id="research" aria-labelledby="research-title" style="margin-top: 62px;">
+                    <h2 id="research-title">Research interests</h2>
+                    <div class="focus-list">
+                        <div class="focus-item">EEG / MEG / fMRI</div>
+                        <div class="focus-item">Multimodal learning</div>
+                        <div class="focus-item">Brain-computer interfaces</div>
+                        <div class="focus-item">Visual reconstruction</div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="contact" id="contact" aria-labelledby="contact-title">
+                <h2 id="contact-title">Get in touch</h2>
+                <p><a class="contact-link" href="mailto:sy2506208@buaa.edu.cn">sy2506208@buaa.edu.cn</a></p>
+            </aside>
+        </div>
+
+        <footer>© 2026 Jiahao Hu</footer>
+    </main>
+
+</body>
+</html>
